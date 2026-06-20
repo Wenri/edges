@@ -13,6 +13,7 @@ opts.maxBoxes = 1e4;  % max number of boxes to detect
 
 %% detect Edge Box bounding box proposals (see edgeBoxes.m)
 I = imread('peppers.png');
+%I = imread('/media/data/Datasets/coco/coco_train2014/COCO_train2014_000000000072.jpg');
 tic, bbs=edgeBoxes(I,model,opts); toc
 
 %% show evaluation results (using pre-defined or interactive boxes)
